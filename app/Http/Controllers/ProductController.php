@@ -15,6 +15,10 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
-        dd($request->all());
+        // upload image
+        $imageName = time().'.'.$request->image->extension();
+        $request->image->move(public_path('products'), $imageName);
+
+        dd($imageName);
     }
 }
