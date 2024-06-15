@@ -16,6 +16,13 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
+        // validate data
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png,gif|max:10000'
+        ]);
+
         // upload image
         $imageName = time().'.'.$request->image->extension();
         $request->image->move(public_path('products'), $imageName);
