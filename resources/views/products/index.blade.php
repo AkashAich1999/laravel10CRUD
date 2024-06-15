@@ -10,6 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-sm bg-dark">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#">Products</a>
+    </li>
+    </ul>
+
+    </nav>
     
     <div class="container">
         <h1>Products</h1>
