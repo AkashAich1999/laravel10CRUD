@@ -23,10 +23,7 @@
     </nav>
     
     <div class="container">
-        <div class="text-right">
-            <a class="btn btn-dark mt-2" href="product/create">New Product</a>
-        </div>
-        <h1>Products</h1>
+        <h1>New Products</h1>
     </div>
 
 </body>
